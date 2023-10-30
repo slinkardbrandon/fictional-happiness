@@ -1,6 +1,7 @@
 node_modules
 dist
 build
+volume
 terraform/.terraform
 test-reports
 test-coverage

@@ -2,15 +2,33 @@
   "name": "ts-s3-uploader",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild",
+    "check": "tsc --noEmit",
+    "start": "tsx ./src/main.ts",
+    "watch": "tsx watch ./src/main.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "aws",
+    "lambda",
+    "s3",
+    "terraform",
+    "esbuild",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
     "@tsconfig/strictest": "^2.0.2",
+    "@types/aws-lambda": "^8.10.125",
+    "@types/node": "^20.8.9",
+    "esbuild": "0.19.5",
+    "prettier": "^3.0.3",
+    "tsx": "^3.14.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.438.0"
   }
 }
